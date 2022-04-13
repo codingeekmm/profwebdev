@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            background: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        #out {
+            width: 500px;
+            height: 500px;
+            background: lightblue;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+        }
+
+        #in {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            top: 50px;
+            left: 50px;
+        }
+
+        #box-one {
+            position: absolute;
+            top: 700px;
+            left: 100px;
+            width: 400px;
+            height: 280px;
+            background: #ff0;
+            z-index: 2;
+        }
+
+        #box-two {
+            position: absolute;
+            top: 650px;
+            left: 150px;
+            width: 400px;
+            height: 280px;
+            background: #8a5;
+            z-index: 1;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="box">This is box</div> -->
+    <div id="out">
+        <div id="in"> In </div>
+    </div>
+    <div id="box-one"></div>
+    <div id="box-two"></div>
+</body>
+
+</html>

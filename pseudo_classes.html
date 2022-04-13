@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* pseudo classes*/
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: red;
+
+        }
+
+        a:hover {
+            color: blue;
+
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+
+        input[type=text] {
+            background: lightgray;
+        }
+
+        input[type=text]:focus {
+            background: yellow;
+        }
+
+        #nav li:last-child {
+            background: pink;
+        }
+
+        #page p:first-child {
+            font-weight: bold;
+        }
+
+        /*grouping selector*/
+        p.note,
+        #footer, .copyright,
+        code {
+            background: #efefef;
+            font-size: 12px;
+        }
+
+        
+       
+    </style>
+</head>
+
+<body>
+    <!--pseudo-classes-->
+    <h2>Pseudo Classes</h2>
+    <a href="https://www.google.com">Search Link</a>
+
+
+    <form>
+        <label for="fname">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email"><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address"></textarea><br>
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <br>
+        <label for="education">Highest Education</label><br>
+        <select id="education">
+            <option>High School</option>
+            <option>Bachelor</option>
+            <option>Post Graduate Diploma</option>
+            <option>Master</option>
+            <option>Ph.D</option>
+        </select><br> <br>
+        <input type="submit" value="send">
+    </form>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+
+    <ul id="nav">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+
+    <div id="page">
+        <p>
+            In addition, links can be styled differently depending on what state they are in.
+        </p>
+        <p class="note">
+            When styling the text of the link itself, we simply reference the anchor tag class name only, and we change
+            change things such as the text's color and other
+        </p>        
+        <code>
+            a {
+                color: hotpink;
+              }
+        </code>
+       <p id="footer">This is footer</p>
+       <p class="copyright">This is copyright</p>  
+        
+    </div>
+   
+   
+
+    <!--pseudo-classes-->
+
+</body>
+
+</html>

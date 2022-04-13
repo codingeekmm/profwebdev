@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*layout*/
+        .wrap {
+            width: 805px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .header {
+            height: 100px;
+            background: lightgoldenrodyellow;
+        }
+
+        .parent {
+            overflow: hidden;
+        }
+
+        .content {
+            width: 600px;
+            height: 400px;
+            background: #519b7e;
+            float: left;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 400px;
+            background: #1635a6;
+            float: left;
+        }
+
+        .footer {
+            height: 60px;
+            background: #333;
+
+        }
+
+        /*drop down list*/
+        .nav,
+        .sub {
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            z-index: 10;
+            position: relative;
+        }
+
+        .nav li {
+            background: #cb1212;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 160px;
+        }
+
+        .nav li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .nav li a:hover {
+            background: lightseagreen;
+        }
+
+        .nav>li {
+            border-right: 1px solid #f00;
+            float: left;
+        }
+
+        .sub {
+            display: none;
+        }
+
+        .nav>li:hover .sub {
+            display: block;
+        }
+
+        .sub li {
+            border-top: 1px solid #f00;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#">Services &raquo;</a>
+                    <ul class="sub">
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </div>
+        <div class="parent">
+            <div class="content"></div>
+            <div class="sidebar"></div>
+        </div>
+
+        <div class="footer"></div>
+    </div>
+
+    
+</body>
+
+</html>

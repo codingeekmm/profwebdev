@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        h2 {
+            clear: both;
+        }
+
+        p strong a {
+            color: gray;
+        }
+
+        /* child selctor*/
+        p>a {
+            color: red;
+        }
+
+        /* child selctor*/
+
+
+        /* attribute selctor*/
+        input[type=text] {
+            background: yellow;
+            border: 1px solid gray;
+        }
+
+        input[type=submit] {
+            padding: 5px 15px;
+            background: burlywood;
+        }
+
+        input[type=radio] {
+            margin-right: 5px;
+        }
+
+        /* attribute selctor*/
+
+        #nav li:hover {
+            background: lightgreen;
+        }
+
+        #nav a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            background-color: #519B7E;
+            color: #FFF;
+            border-radius: 20px;
+            float: left;
+            margin: 10px ;
+        }
+        #clear{
+            clear: both;
+        }
+
+        #nav a:hover {
+            background: lightcoral;
+
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pseudo_classes.html">Pseudo Classes</a></li>
+        <li><a href="basic_properties.html">Basic Propertities</a></li>
+        <li><a href="display_type.html">Display Type</a></li>
+        <li><a href="layout.html">Layout</a></li>
+        <li><a href="postion.html">Position</a></li>
+
+    </ul>
+    <br>
+    <div id="clear">
+        <a href="#">Outside Link</a>
+        <p>
+            <a href="#">Inside Link One</a>
+            <strong><a href="#">Inside Link Two</a></strong>
+        </p>
+    </div>
+    <!--attribute selector-->
+    <h2>Attribut Selector</h2>
+    <form>
+        <label for="fname">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email"><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address"></textarea><br>
+        <br>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label><br>
+        <br>
+        <label for="education">Highest Education</label><br>
+        <select id="education">
+            <option>High School</option>
+            <option>Bachelor</option>
+            <option>Post Graduate Diploma</option>
+            <option>Master</option>
+            <option>Ph.D</option>
+        </select><br> <br>
+        <input type="submit" value="send">
+    </form>
+    <!--attribute selector-->
+
+
+
+</body>
+
+</html>

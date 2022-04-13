@@ -1,0 +1,61 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+}
+
+#example1 {
+    height: 200px;
+    border: 2px solid black;
+    padding: 25px;
+    background: url(assets/alert.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+#example2 {
+    border: 2px solid black;
+    padding: 25px;
+    background: url(assets/alert.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: top right;
+}
+
+p.alert {
+
+
+    background: #FFD url(assets/alert.png) no-repeat 10px center;
+    border: 2px solid #DDA;
+    padding: 10px 10px 10px 80px;
+    border-radius: 5px;
+    background-size: 50px 50px;
+
+}
+
+p {
+    font-family: Padauk, Maynamr3, "Myanmar Text";
+    letter-spacing: -1px;
+    word-spacing: 4px;
+}
+
+ol {
+    list-style-image: url(assets/alert.png);
+
+}
+
+table {
+    border-spacing: 1px;
+    background: #247;
+}
+
+td {
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    color: white;
+}
