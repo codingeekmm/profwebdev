@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display: block;
+            border-radius: 20px;
+            background: purple;
+            width: 200px;
+            height: 50px;
+            ;
+            margin: 10px;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            font-size: 20px;
+            
+        }
+
+        a:hover {
+            background: orange;
+        }
+
+        li {
+            list-style: none;
+        }
+        #nav{
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="modal_dialog.html">Modal Dialog</a></li>      
+            <li><a href="tab_panel.html">Tab Panels</a></li>
+
+        </ul>
+    </div>
+    <div id="content">
+        <select id="months"></select>
+        <script>
+            var months = [
+                "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var data, i = 0, len = months.length;
+            while (i < len) {
+                data += "<option>" + months[i] + "</option>";
+                i++;
+            }
+            document.getElementById("months").innerHTML = data;        
+        </script>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+        <p id="demo"></p>
+    </div>
+
+</body>
+
+</html>
