@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Click Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="note">Hello, World!</div>
+    <button>Toggle</button>
+    
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $("button").click(function () {
+            $("#note").slideToggle("fast");
+        });
+    </script>
+    
+</body>
+
+</html>
