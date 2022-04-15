@@ -1,0 +1,69 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="nav">
+        <ul>
+            <li><a href="jquery_events.html">JQuery Events</a></li>
+            <li><a href="menu_boxes.html">Menu Boxes</a></li>
+            <li><a href="todo_list.html">Todo List</a></li>
+            <li><a href="jquery_ui.html">JQuery UI Plugin</a></li>
+            <li><a href="data_table.html">JQuery Data Table</a></li>
+        </ul>
+    </div>
+
+    <p id="note">Hello, World!</p>
+
+    <div id="note2">
+        <p>This is show or hide</p>
+    </div>
+    <button id="toggle">Toggole</button>
+
+    <input type="text" name="" id="fname">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+        $("#note").html("Hello from jQuery!");
+        $("#note").css({
+            "color": "red",
+            "background-color": "yellow",
+            "padding": "10px"
+        });
+
+        // $("#show_hide").hide(1000);
+        //$("#show_hide").toggle()
+        //$("#show_hide").slideToggle()
+
+        // $("#show_hide").fadeOut("slow", function () {
+        //     alert("Done Hiding the Note.");
+        // });
+
+        $("#toggle").click(function(){
+            $("#note2").slideToggle(500);
+        });
+
+        // $("toggle").on("click", function () {
+        //     $("#note2").slideToggle(500);
+        // });
+
+        $("toggle").on("click", function () {
+            $("#note2").slideToggle("fast");
+        });
+
+        $("#fname").val("John");
+        var first = $("#fname").val();
+       // alert(first);
+
+    </script>
+</body>
+
+</html>
